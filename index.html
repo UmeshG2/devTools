@@ -5,12 +5,14 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-
+  <div id="header">Loading...</div>
   <div id="result">Loading...</div>
-
+  <div id="footer">Loading...</div>
   <script>
     $(document).ready(function() {
+      $("#header").load("includes/header_navbar.php");
       $("#result").load("index.php");
+    //   $("#footer").load("index.php");
     });
   </script>
 
